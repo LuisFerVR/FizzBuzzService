@@ -1,4 +1,4 @@
-const  reader = require('../../utils/Reader');//seeguro
+const  reader = require('../../lib/utils/Reader');//seeguro
 describe('test para Reader',() => {
   test('1) recibir lista de explorers', () => {
     const explorers = reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo

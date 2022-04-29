@@ -3,7 +3,7 @@ const FizzBuzzService = require("../../lib/services/FizzBuzzService");
 describe("test para FizzBuzzService", () => {
     test("test 1", () => {
         const explorer1 = {name: "Explorer1", score:1};
-        const res1 = FizzBuzzService.applyValidationInExplorer(explorer1); // {name: "Explorer1", score: 1, trick: 1} 
+        const res1 = FizzBuzzService.applyValidationInExplorer(explorer1);
         expect(res1).toStrictEqual({name: "Explorer1", score: 1, trick: 1});
     }),
     test("test 2", () =>{
@@ -13,12 +13,12 @@ describe("test para FizzBuzzService", () => {
     }),
     test("test 3", () =>{
         const explorer5 = {name: "Explorer5", score: 5};
-        const res3 = FizzBuzzService.applyValidationInExplorer(explorer5); // {name: "Explorer5", score: 5, trick: "BUZZ"}
+        const res3 = FizzBuzzService.applyValidationInExplorer(explorer5);
         expect(res3).toStrictEqual({name: "Explorer5", score: 5, trick: "BUZZ"});
     }),
     test("test 4", () =>{
         const explorer15 = {name: "Explorer15", score: 15};
-        const res4 = FizzBuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
+        const res4 = FizzBuzzService.applyValidationInExplorer(explorer15);
         expect(res4).toStrictEqual({name: "Explorer15", score: 15, trick: "FIZZBUZZ"});
     });
 });

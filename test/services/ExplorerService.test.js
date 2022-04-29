@@ -12,8 +12,3 @@ describe("Tests para ExplorerService", () => {
         expect(ExplorersUsernames).toStrictEqual(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
     });
 });
-
-/* // Aplicación del ExplorerService sobre la lista de explorers
-ExplorerService.filterByMission(explorers, "node");
-ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-ExplorerService.getExplorersUsernamesByMission(explorers, "node"); */

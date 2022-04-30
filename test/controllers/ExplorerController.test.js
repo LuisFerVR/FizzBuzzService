@@ -3,5 +3,9 @@ describe("test para clase ExplorerController", () => {
     test("metodo 1", () => {
         const filtrado = ExploreController.getExplorersByMission("node");
         expect(filtrado.length).toBe(10);
+    }),
+    test("metodo 2", () => {
+        const listUserNamesFilterr = ExploreController.getExplorersUsernamesByMission("node");
+        expect(listUserNamesFilterr.length).toBe(10);
     });
 });

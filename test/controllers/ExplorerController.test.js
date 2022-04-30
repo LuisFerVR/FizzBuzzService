@@ -11,5 +11,10 @@ describe("test para clase ExplorerController", () => {
     test("metodo 3", () => {
         const listCantExplorers = ExploreController.getExplorersAmonutByMission("node");
         expect(listCantExplorers).toBe(10);
+    }),
+    test("metodo 4:validación por score", () => {
+        const example1 = [{"score": 3,"trick":"FIZZ" }];
+        const validation = ExploreController.getValidation(3);
+        expect(validation).toStrictEqual(example1);
     });
 });
